@@ -20,7 +20,7 @@ const Navbar = () => {
         </Link>
         <div className="d-flex align-items-center">
           <Link className="btn btn-warning me-3" to="/random-meal">
-            Repas Aléatoire
+            K-sdal Aléatoire
           </Link>
           <form className="d-flex" onSubmit={handleSearch}>
             <input

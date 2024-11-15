@@ -20,9 +20,9 @@ const FilteredMealsPage = () => {
       try {
         const response = await fetch(endpoint);
         const data = await response.json();
-        setMeals(data.meals || []); // Si aucun repas, assurez-vous que meals est un tableau vide
+        setMeals(data.meals || []); // Si aucun K-sdal, assurez-vous que meals est un tableau vide
       } catch (error) {
-        console.error("Erreur lors de la récupération des repas :", error);
+        console.error("Erreur lors de la récupération des K-sdal :", error);
       }
     };
 
@@ -32,7 +32,7 @@ const FilteredMealsPage = () => {
   return (
     <main>
       <h1>
-        Repas pour {filterType === "category" ? "la catégorie" : "l'ingrédient"} :{" "}
+        K-sdal pour {filterType === "category" ? "la catégorie" : "l'ingrédient"} :{" "}
         <span className="text-warning">{filterValue}</span>
       </h1>
       <div className="container">
@@ -54,7 +54,7 @@ const FilteredMealsPage = () => {
             ))}
           </div>
         ) : (
-          <p>Aucun repas trouvé pour {filterType} : {filterValue}</p>
+          <p>Aucun K-sdal trouvé pour {filterType} : {filterValue}</p>
         )}
       </div>
     </main>

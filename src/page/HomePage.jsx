@@ -77,7 +77,7 @@ const HomePage = () => {
                 <div className="card-body d-flex flex-column">
                   <h5 className="card-title">{category.strCategory}</h5>
                   <Link to={`/category/${category.strCategory}`} className="btn btn-warning">
-                    Voir les repas
+                    Voir les K-sdal
                   </Link>
                 </div>
               </div>
@@ -95,7 +95,7 @@ const HomePage = () => {
                 <div className="card-body d-flex flex-column">
                   <h5 className="card-title">{ingredient.strIngredient}</h5>
                   <Link to={`/ingredient/${ingredient.strIngredient}`} className="btn btn-warning">
-                    Voir les repas
+                    Voir les K-sdal
                   </Link>
                 </div>
               </div>
