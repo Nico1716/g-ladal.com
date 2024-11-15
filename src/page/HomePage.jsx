@@ -44,7 +44,7 @@ const HomePage = () => {
       <div className="row">
         {meals.map((meal) => (
           <div className="col-md-4 mb-4" key={meal.idMeal}>
-            <div className="card h-100 shadow-sm">
+            <div className="card mauve h-100 shadow-sm">
               <img
                 src={meal.strMealThumb}
                 alt={meal.strMeal}
@@ -67,7 +67,7 @@ const HomePage = () => {
         <div className="row">
           {categories.map((category) => (
             <div className="col-md-4 mb-4" key={category.idCategory}>
-              <div className="card h-100 shadow-sm">
+              <div className="card mauve h-100 shadow-sm">
                 <img
                   src={category.strCategoryThumb}
                   alt={category.strCategory}
@@ -91,7 +91,7 @@ const HomePage = () => {
         <div className="row">
           {ingredients.map((ingredient, index) => (
             <div className="col-md-4 mb-4" key={index}>
-              <div className="card h-100 shadow-sm">
+              <div className="card mauve h-100 shadow-sm">
                 <div className="card-body d-flex flex-column">
                   <h5 className="card-title">{ingredient.strIngredient}</h5>
                   <Link to={`/ingredient/${ingredient.strIngredient}`} className="btn btn-warning">

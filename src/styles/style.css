@@ -1,16 +1,18 @@
 /* Applique une couleur de fond personnalisée à toutes les cartes */
 .card {
-    background-color: #a9a3ff; /* Couleur claire de fond */
-    border: 1px solid #ddd; /* Bordure subtile */
     border-radius: 8px; /* Coins arrondis */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre douce */
   }
-  
-  /* Ajoute un effet au survol des cartes */
-  .card:hover {
+
+  .mauve {
+    background-color: #a9a3ff; /* Couleur claire de fond */
+    border: 1px solid #ddd; /* Bordure subtile */
+  }
+  /* Ajoute un effet au survol*/
+  .mauve:hover {
     background-color: #ffffff; /* Couleur légèrement différente au survol */
-    transform: translateY(-5px); /* Légère élévation */
     transition: all 0.3s ease-in-out; /* Animation fluide */
+    border-color: #a9a3ff;
   }
   
   body {
